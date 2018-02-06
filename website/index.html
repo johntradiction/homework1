@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello World</title>
+    <title>Homework 1</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css"/>
+    <style>
+    .outer {
+        box-sizing: content-box;    
+        width: 900px;
+        height: 400px;   
+        border: 5px solid rgb(214, 67, 67);
+        margin: auto;
+    }
+    .inner-left {
+        float: left;
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+    }
+    .inner-right {
+        float: right;
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+    }
+    .vertical-line {
+        border-left: 5px solid rgb(214, 67, 67);
+        height: 400px;
+        position:absolute;
+        left: 50%;
+    }
+    .horizontal-line {
+        border-bottom: 5px solid green;
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid rgb(167, 167, 167);
+    }
+
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Tran, John</h1>
+    <div class="horizontal-line"></div>
+    <p>Welcome to IS445 Homework 1</p>
+    <p><img src="images\tenor.gif" alt="dog"></p>
+    <div class="outer">
+        <div class="inner-left">
+            <h2>About Me</h2><br/>
+            <p1>Education</p1><br/>
+            <p2>Spring 2018, Information Systems, CSULB</p2><br/><br/>
+            <p1>Skills</p1>
+            <ol>
+                <li>Python</li>
+                <li>Oracle</li>
+            </ol><br/>
+            <p1>Expectation for this course</p1><br/><br/>
+            <p2>I would like to become familiar with HTML, CSS, and JavaScript as well as Node.js.</p2>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="inner-right">
+            <h2>Contact Me</h2>
+            <div class="container">
+                <form action="" method="post">
+                    <label for="name">Name:</label><br/>
+                    <input type="text" name="name" id="name" /><br/><br/>
+                    <label for="Email">Email:</label><br/>
+                    <input type="text" name="email" id="email" /><br/><br/>
+                    <label for="Message">Message:</label><br />
+                    <textarea name="message" rows="7" cols="40" id="message"></textarea>
+                    <input type="submit" name="submit" value="Send your message" />
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
